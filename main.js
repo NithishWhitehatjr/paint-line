@@ -2,8 +2,8 @@ var mousevent= "empty";var lastposistionofx,lastpostionofy;
 canvas=document.getElementById("myCanvas");
 cityx=canvas.getContext
 ("2d");
-color="var.color";
-width=var.width;
+color=document.getElementById("color").value
+width=document.getElementById("width").value
 canvas.addEventListener("mousedown" ,mymousedown);
 function mymousedown(e){
     mousevent="mousedown";
