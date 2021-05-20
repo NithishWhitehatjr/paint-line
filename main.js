@@ -22,6 +22,7 @@ function mymousemove(e){
     currenty=e.clientY-canvas.offsetTop
     if(mousevent=="mousedown"){
         cityx.beginPath();
+        
         cityx.strokeStyle=color;
         cityx.lineWidth=width
         cityx.moveTo(lastposistionofx,lastpostionofy)
