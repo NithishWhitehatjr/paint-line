@@ -31,8 +31,6 @@ function mymousemove(e){
     }
    lastposistionofx=currentx;
    lastpostionofy=currenty;
-   var color=document.getElementById("text_inputcolor").value;
-var width=document.getElementById("text_inputwidth").value;
 
 
 }
@@ -47,13 +45,8 @@ function mytouchdown(e){
     touchevent="touchdown";
 
 }
-canvas.addEventListener("touchup" ,mytouchup);
-function mytouchup(e){
-    mousevent="touchup";}
-    canvas.addEventListener("touchleave" ,mytouchjleave);
-    function mytouchleave(e){
-        mousevent="touchleave";
-    }
+
+
     canvas.addEventListener("touchmove" ,mytouchmove);
 function mytouchmove(e){
     currentx=e.clientX-canvas.offsetLeft;
@@ -65,3 +58,5 @@ function mytouchmove(e){
         cityx.moveTo(lastposistionofx,lastpostionofy)
         cityx.lineTo(currentx,currenty)
         cityx.stroke();
+    }
+}
